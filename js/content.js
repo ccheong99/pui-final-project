@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-1-row-1').style.display = 'none';
                 document.getElementById('section-1-row-2').style.display = 'none';
                 document.getElementById('section-1-row-3').style.height = '100%';
-                document.getElementById('box-3-text').style.display = 'block';
+                document.getElementById('box-3-content').style.display = 'block';
                 iconRightUp.src = 'assets/img/icon-arrow-left-down.png';
             } else {
                 document.getElementById('section-1-row-3').style.height = '690px';
-                document.getElementById('box-3-text').style.display = 'block';
+                document.getElementById('box-3-content').style.display = 'block';
                 iconRightUp.src = 'assets/img/icon-arrow-left-down.png';
             }
         } else {
@@ -52,11 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-1-row-1').style.display = 'flex';
                 document.getElementById('section-1-row-2').style.display = 'flex';
                 document.getElementById('section-1-row-3').style.height = '25%';
-                document.getElementById('box-3-text').style.display = 'none';
+                document.getElementById('box-3-content').style.display = 'none';
                 iconRightUp.src = 'assets/img/icon-arrow-right-up.png';
             } else {
                 document.getElementById('section-1-row-3').style.height = '160px';
-                document.getElementById('box-3-text').style.display = 'none';
+                document.getElementById('box-3-content').style.display = 'none';
                 iconRightUp.src = 'assets/img/icon-arrow-right-up.png';
             }
         }
@@ -105,20 +105,28 @@ document.addEventListener('DOMContentLoaded', function () {
             if (screenWidthBox7 > 768) {
                 document.getElementById('section-2-row-1').style.display = 'none';
                 document.getElementById('section-2-row-2').style.height = '100%';
+                document.getElementById('blur').style.display = 'block';
+                document.getElementById('box-7-content').style.display = 'block';
                 iconRightUpWhite.src = 'assets/img/icon-arrow-left-down-white.png';
             } else {
                 document.getElementById('section-2-row-1').style.display = 'flex';
                 document.getElementById('section-2-row-2').style.height = '690px';
+                document.getElementById('blur').style.display = 'block';
+                document.getElementById('box-7-content').style.display = 'block';
                 iconRightUpWhite.src = 'assets/img/icon-arrow-left-down-white.png';
             }
         } else {
             if (screenWidthBox7 > 768) {
                 document.getElementById('section-2-row-1').style.display = 'flex';
                 document.getElementById('section-2-row-2').style.height = '50%';
+                document.getElementById('blur').style.display = 'none';
+                document.getElementById('box-7-content').style.display = 'none';
                 iconRightUpWhite.src = 'assets/img/icon-arrow-right-up-white.png';
             } else {
                 document.getElementById('section-2-row-1').style.display = 'flex';
                 document.getElementById('section-2-row-2').style.height = '320px';
+                document.getElementById('blur').style.display = 'none';
+                document.getElementById('box-7-content').style.display = 'none';
                 iconRightUpWhite.src = 'assets/img/icon-arrow-right-up-white.png';
             }
         }

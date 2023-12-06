@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>PUI Final Project</title>
     <link rel = "stylesheet" href = "assets/style.css">
+    <link rel = "stylesheet" href = "webfontkit-20231205-073239/webfont-stylesheet.css">
     <script src="js/content.js" defer></script>
   </head>
   
@@ -30,7 +31,7 @@
           <div class = "box" id = "box-3">
             <h2>Digital Carbon Footprint</h2>
             <img id = "icon-right-up" src = "assets/img/icon-arrow-right-up.png">
-            <p id = "box-3-text">Definition: CO₂ emissions from the production, use and data transfer of digital devices</p>
+            <p id = "box-3-content">Definition: CO₂ emissions from the production, use and data transfer of digital devices</p>
           </div>
         </div>
       </div>
@@ -71,8 +72,18 @@
             <video autoplay muted loop>
               <source src = "assets/video.mp4" type = "video/mp4"/>
             </video>
+            <div id = "blur"></div>
             <div id = "box-7-text">
-              <h2>Images and Videos</h2>
+              <h2 if = "box-7-title">Images and Videos</h2>
+              <p id = "box-7-content">Video, image, and animation-heavy websites are often those which can have significant sustainability costs not only in terms of carbon intensity but also in draining batteries. Optimizing such assets as much as possible is critical for a sustainable product or service.
+                <br>
+                <br>
+                The following are some recommended steps to reduce digital carbon footprints.
+                <br>
+                <br>
+                * Reconsider the need for media: Assess the need for imagery or videos and include only when they add visitor value. Ban non-informative media, such as background media and autoplaying functionality.<br><br>
+                * Optimize media: If you have chosen to include media, compress the file size if possible, select the appropriate format, and avoid embedded player plugins.<br><br>
+                * Include labels and choice: Increase visitor awareness and control by informing them of the length, format, and weight of the media. Allow media deactivation, and provide alternative resolutions and formats.</p>
             </div>
             <img id = "icon-right-up-white" src = "assets/img/icon-arrow-right-up-white.png">
           </div>
