@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>PUI Final Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js></script>
     <link rel = "stylesheet" href = "assets/style.css">
     <link rel = "stylesheet" href = "webfontkit-20231205-073239/webfont-stylesheet.css">
     <script src="js/content.js" defer></script>
+    <script src="js/drag.js" defer></script>
   </head>
   
   <body>
@@ -23,7 +26,21 @@
       </div>
       <div id = "section-1-row-2">
         <div class = "grid" id = "section-1-row-2-column-1">
-          <div class = "box" id = "box-2"></div>
+          <div class = "box" id = "box-2">
+            <svg version="1.1" id="slider"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="500px" height="200px" viewBox="0 0 500 200" enable-background="new 0 0 500 200"
+            xml:space="preserve">
+              <path id = "combinedShape" d = "M-60 120 L190 120 L190 -40 L560 -40 L560 80 L310 80 L310 240 L-60 240 Z"/>
+              <path id = "rail" d = "M0 180 H 250 V 20 H 500"/>
+              <text>
+                <textPath id = "textpath" href="#rail" dy="5em">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drag along the &nbsp;&nbsp;&nbsp;&nbsp;path to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sustainability
+                </textPath>
+              </text>
+              <image id = "knob" xlink:href = "assets/img/arrow-circle.png" x="-50" y="130" r = "50"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div id = "section-1-row-3">

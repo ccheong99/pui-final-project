@@ -12,6 +12,8 @@ body{
     height: 100vh;
     overflow: hidden;
     font-family: 'Craftwork Grotesk', sans-serif;
+    transition: background-color 0.5s ease;
+    transition: font-family 0.5s ease;
 }
 .section{
     width: 50%;
@@ -101,6 +103,7 @@ body{
     background-color: #23C363;
     overflow-wrap: break-word;
     overflow: hidden;
+    transition: background-color 0.5s ease;
 }
 h1{
     margin: 24px;
@@ -126,11 +129,42 @@ h1{
 #box-2{
     background-color: dodgerblue;
     overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+#slider{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    overflow:visible;
+}
+#combinedShape{
+    fill: white;
+    stroke: #000000;
+    stroke-width: 2;
+}
+#rail{
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+#knob{
+    fill: #7CFC00;
+    background-image: "assets/img/arrow-circle.png";
+    width: 100px;
+}
+#textpath{
+    letter-spacing: 5px;
 }
 #box-3{
     background-color: orange;
     overflow: hidden;
     position: relative;
+    transition: background-color 0.5s ease;
 }
 h2{
     margin: 24px;
@@ -153,6 +187,8 @@ h2{
     position: relative;
     overflow: hidden;
     overflow: hidden;
+    background-color: white;
+    transition: background-color 0.5s ease;
 }
 #icon-right-down{
     width: 32px;
@@ -235,6 +271,7 @@ h2{
     background-color: gray;
     overflow: hidden;
     position: relative;
+    transition: background-color 0.5s ease;
 }
 #icon-left-down{
     width: 32px;
@@ -246,6 +283,7 @@ h2{
     background-color: #F68EAE;
     overflow: hidden;
     position: relative;
+    transition: background-color 0.5s ease;
 }
 #icon-plus{
     width: 32px;
@@ -257,6 +295,7 @@ h2{
     background-color: black;
     position: relative;
     overflow: hidden;
+    transition: background-color 0.5s ease;
 }
 video {
     width: 100%;
