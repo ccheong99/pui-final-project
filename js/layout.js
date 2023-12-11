@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('box-3-content').style.display = 'block';
                 iconRightUp.src = 'assets/img/icon-arrow-left-down.png';
             } else {
-                document.getElementById('section-1-row-3').style.height = '690px';
+                document.getElementById('section-1-row-3').style.height = '580px';
                 document.getElementById('box-3-content').style.display = 'block';
                 iconRightUp.src = 'assets/img/icon-arrow-left-down.png';
             }

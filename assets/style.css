@@ -119,6 +119,10 @@ h1{
 #icon-arrow{
     width: 32px;
 }
+#icon-arrow2{
+    width: 32px;
+    display: none;
+}
 #icon-right-up{
     width: 32px;
     right: 0px;
@@ -136,6 +140,8 @@ h1{
 }
 #slider{
     position:absolute;
+    width: 500px;
+    height: 200px;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
@@ -153,7 +159,7 @@ h1{
     stroke-miterlimit: 10;
 }
 #knob{
-    fill: #7CFC00;
+    background-color: white;
     background-image: "assets/img/arrow-circle.png";
     width: 100px;
 }
@@ -311,12 +317,6 @@ h2{
     overflow: hidden;
     position: relative;
     transition: background-color 0.5s ease;
-}
-#icon-plus{
-    width: 32px;
-    position: absolute;
-    right: 24px;
-    top: 24px;
 }
 #box-7{
     background-color: black;
