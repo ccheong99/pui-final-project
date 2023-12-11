@@ -7,7 +7,7 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js></script>
     <link rel = "stylesheet" href = "assets/style.css">
     <link rel = "stylesheet" href = "webfontkit-20231205-073239/webfont-stylesheet.css">
-    <script src="js/content.js" defer></script>
+    <script src="js/layout.js" defer></script>
     <script src="js/drag.js" defer></script>
   </head>
   
@@ -16,7 +16,7 @@
       <div id = "section-1-row-1">
         <div class = "grid" id = "section-1-row-1-column-1">
           <div class = "box" id = "box-1">
-            <h1>Web Sustainability</h1>
+            <h1 id = "title">Web Sustainability</h1>
           </div>
         </div>
         <div class = "grid" id = "section-1-row-1-column-2">
@@ -46,7 +46,7 @@
       <div id = "section-1-row-3">
         <div class = "grid" id = "section-1-row-3-column-1">
           <div class = "box" id = "box-3">
-            <h2>Digital Carbon Footprint</h2>
+            <h2 id = "box-3-title">Digital Carbon Footprint</h2>
             <img id = "icon-right-up" src = "assets/img/icon-arrow-right-up.png">
             <p id = "box-3-content">Definition: CO₂ emissions from the production, use and data transfer of digital devices</p>
           </div>
@@ -59,11 +59,25 @@
           <div class = "box" id = "box-4">
             <div id = bounce-wrap>
               <div id = "bounce-1"></div>
-              <div id = "bounce-2"><img id = "img-triangle" src = "assets/img/triangle.png"></div>
+              <div id = "bounce-2">
+                <img id = "img-triangle" src = "assets/img/triangle.png">
+                <img id = "img-triangle2" src = "assets/img/triangle2.png">
+              </div>
               <div id = "bounce-3"></div>
             </div>
             <div id = "box-4-text">
               <h2>Color</h2>
+              <p id = "box-4-content">Video, image, and animation-heavy websites are often those which can have significant sustainability costs not only in terms of carbon intensity but also in draining batteries. Optimizing such assets as much as possible is critical for a sustainable product or service.
+                <br>
+                <br>
+                The following are best practices to reduce digital carbon footprints.
+                <br>
+                <br>
+                * Reconsider the need for media: Assess the need for imagery or videos and include only when they add visitor value. Ban non-informative media, such as background media and autoplaying functionality.<br><br>
+                * Optimize media: If you have chosen to include media, compress the file size if possible, select the appropriate format, and avoid embedded player plugins.<br><br>
+                * Include labels and choice: Increase visitor awareness and control by informing them of the length, format, and weight of the media. Allow media deactivation, and provide alternative resolutions and formats.<br><br>
+                * Dither images: Dithering can make images less resource-intensive by a factor of ten or more while retaining the same image size.
+              </p>
               <img id = "icon-right-down" src = "assets/img/icon-arrow-right-down.png">
             </div>
           </div>
@@ -73,6 +87,13 @@
             <div class = "box" id = "box-5">
               <h2>Font</h2>
               <img id = "icon-left-down" src = "assets/img/icon-arrow-left-down.png">
+              <p id = "box-5-content">Loading embedded fonts has a carbon impact (as the physical rendering of non-system typefaces graphically onto every element of the DOM will have an energy commitment).
+                The following are best practices to reduce digital carbon footprints.
+                <br>
+                <br>
+                * Use default typefaces: Use standard system-level (web-safe / pre-installed) fonts as much as possible.<br><br>
+                * Optimize fonts: Ensure the number of fonts, and the variants within typefaces (such as weight and characters) are limited within a project.
+                </p>
             </div>
           </div>
           <div class = "grid" id = "section-2-row-1-column-2-row-2">
@@ -86,21 +107,26 @@
       <div id = "section-2-row-2">
         <div class = "grid" id = "section-2-row-2-column-1">
           <div class = "box" id = "box-7">
-            <video autoplay muted loop>
+            <video autoplay muted loop id = "video">
               <source src = "assets/video.mp4" type = "video/mp4"/>
             </video>
+            <img id = "video-to-image" src = "assets/img/video-to-image.png">
+            <img id = "dither1" src = "assets/img/dither1.png">
+            <img id = "dither2" src = "assets/img/dither2.png">
             <div id = "blur"></div>
             <div id = "box-7-text">
               <h2 if = "box-7-title">Images and Videos</h2>
               <p id = "box-7-content">Video, image, and animation-heavy websites are often those which can have significant sustainability costs not only in terms of carbon intensity but also in draining batteries. Optimizing such assets as much as possible is critical for a sustainable product or service.
                 <br>
                 <br>
-                The following are some recommended steps to reduce digital carbon footprints.
+                The following are best practices to reduce digital carbon footprints.
                 <br>
                 <br>
                 * Reconsider the need for media: Assess the need for imagery or videos and include only when they add visitor value. Ban non-informative media, such as background media and autoplaying functionality.<br><br>
                 * Optimize media: If you have chosen to include media, compress the file size if possible, select the appropriate format, and avoid embedded player plugins.<br><br>
-                * Include labels and choice: Increase visitor awareness and control by informing them of the length, format, and weight of the media. Allow media deactivation, and provide alternative resolutions and formats.</p>
+                * Include labels and choice: Increase visitor awareness and control by informing them of the length, format, and weight of the media. Allow media deactivation, and provide alternative resolutions and formats.<br><br>
+                * Dither images: Dithering can make images less resource-intensive by a factor of ten or more while retaining the same image size.
+              </p>
             </div>
             <img id = "icon-right-up-white" src = "assets/img/icon-arrow-right-up-white.png">
           </div>

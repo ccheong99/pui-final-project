@@ -178,12 +178,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-1').style.height = '100%';
                 document.getElementById('section-2-row-1-column-2').style.display = 'none';
                 document.getElementById('section-2-row-2').style.display = 'none';
+                document.getElementById('box-4-content').style.display = 'block';
                 iconRightDown.src = 'assets/img/icon-arrow-left-up.png';
             } else {
                 document.getElementById('section-2-row-1').style.height = '50%';
                 document.getElementById('section-2-row-1-column-1').style.width = '100%';
                 document.getElementById('section-2-row-1-column-1').style.height = '690px';
                 document.getElementById('section-2-row-1-column-2').style.display = 'none';
+                document.getElementById('box-4-content').style.display = 'block';
                 iconRightDown.src = 'assets/img/icon-arrow-left-up.png';
             }
         } else {
@@ -193,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-1').style.height = 'auto';
                 document.getElementById('section-2-row-1-column-2').style.display = 'flex';
                 document.getElementById('section-2-row-2').style.display = 'flex';
+                document.getElementById('box-4-content').style.display = 'none';
                 iconRightDown.src = 'assets/img/icon-arrow-right-down.png';
             } else {
                 document.getElementById('section-2-row-1-column-1').style.width = '50%';
@@ -201,6 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-2-row-1').style.height = '160px';
                 document.getElementById('section-2-row-1-column-2-row-2').style.height = '160px';
                 document.getElementById('section-2-row-1-column-2').style.display = 'flex';
+                document.getElementById('box-4-content').style.display = 'none';
                 iconRightDown.src = 'assets/img/icon-arrow-right-down.png';
             }
         }
@@ -252,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-2-row-1').style.height = '100%';
                 document.getElementById('section-2-row-1-column-2-row-2').style.display = 'none';
                 document.getElementById('section-2-row-1-column-1').style.display = 'none';
+                document.getElementById('box-5-content').style.display = 'block';
                 iconLeftDown.src = 'assets/img/icon-arrow-right-up.png';
             } else {
                 document.getElementById('section-2-row-1-column-2').style.width = '100%';
@@ -259,6 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-2-row-1').style.height = '100%';
                 document.getElementById('section-2-row-1-column-2-row-2').style.display = 'none';
                 document.getElementById('section-2-row-1-column-1').style.display = 'none';
+                document.getElementById('box-5-content').style.display = 'block';
                 iconLeftDown.src = 'assets/img/icon-arrow-right-up.png';
             }
         } else {
@@ -268,6 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-2-row-1').style.height = '50%';
                 document.getElementById('section-2-row-1-column-2-row-2').style.display = 'flex';
                 document.getElementById('section-2-row-1-column-1').style.display = 'flex';
+                document.getElementById('box-5-content').style.display = 'none';
                 iconLeftDown.src = 'assets/img/icon-arrow-left-down.png';
             } else {
                 document.getElementById('section-2-row-1-column-2').style.width = '50%';
@@ -275,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('section-2-row-1-column-2-row-1').style.height = '50%';
                 document.getElementById('section-2-row-1-column-2-row-2').style.display = 'flex';
                 document.getElementById('section-2-row-1-column-1').style.display = 'flex';
+                document.getElementById('box-5-content').style.display = 'none';
                 iconLeftDown.src = 'assets/img/icon-arrow-left-down.png';
             }
         }

@@ -161,7 +161,7 @@ h1{
     letter-spacing: 5px;
 }
 #box-3{
-    background-color: orange;
+    background-color: #FFC01D;
     overflow: hidden;
     position: relative;
     transition: background-color 0.5s ease;
@@ -207,6 +207,14 @@ h2{
     z-index: 1;
     position: relative;
 }
+#box-4-content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    display: none;
+}
 #bounce-1{
     position: absolute;
     bottom: 4px;
@@ -218,6 +226,10 @@ h2{
     animation: bounce-1 2.4s infinite alternate;
     -webkit-animation: bounce-1 2.4s infinite alternate;
 }
+#bounce-1.stop-bounce {
+    animation: none;
+    transform: translateY(0);
+}
 @keyframes bounce-1{
     from {
       transform: translateY(-128px);
@@ -228,6 +240,10 @@ h2{
 }
 #img-triangle{
     width: 80px;
+}
+#img-triangle2{
+    width: 80px;
+    display: none;
 }
 #bounce-2{
     position: absolute;
@@ -268,10 +284,21 @@ h2{
     }
 }
 #box-5{
-    background-color: gray;
+    background-color: #E5E5E5;
     overflow: hidden;
     position: relative;
     transition: background-color 0.5s ease;
+}
+#box-5-content{
+    margin-top: 36px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 15px;
+    font-family: 'circular_stdlight';
+    font-weight: 300;
+    line-height: 150%;
+    display: none;
 }
 #icon-left-down{
     width: 32px;
@@ -297,13 +324,40 @@ h2{
     overflow: hidden;
     transition: background-color 0.5s ease;
 }
-video {
+#video{
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
     z-index: 0;
-    /*border-radius: 32px;*/
+    border-radius: 30px;
+}
+#video-to-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 30px;
+    display: none;
+}
+#dither1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 30px;
+    display: none;
+}
+#dither2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 30px;
+    display: none;
 }
 #box-7-text{
     z-index: 2;
@@ -346,11 +400,7 @@ video {
 
 /*responsive design*/
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {
-}*/
-
-/* Medium devices (landscape tablets, 768px and up) */
+/* Under 768px */
 @media only screen and (max-width: 768px) {
     body{
         display: flex;
@@ -404,10 +454,7 @@ video {
     #section-2-row-1-column-1{
         height: 320px;
     }
-    #section-2-row-1-column-2-row-1{
-        height: 160px;
-    }
-    #section-2-row-1-column-2-row-2{
+    #section-2-row-1-column-2-row-1, #section-2-row-1-column-2-row-2{
         height: 160px;
     }
     #section-2-row-2{
@@ -434,15 +481,7 @@ video {
         font-weight: 400;
         z-index: 1;
     }
-    #box-3-content{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 16px;
-        display: none;
-    }
-    #box-7-content{
+    #box-3-content, #box-4-content, #box-5-content, #box-7-content{
         margin-top: 30px;
         margin-bottom: 20px;
         margin-left: 20px;
