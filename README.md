@@ -1,4 +1,4 @@
-# PUI homework
+# PUI Final Project
 
 Deployed website: https://ccheong99.github.io/pui-final-project/
 
