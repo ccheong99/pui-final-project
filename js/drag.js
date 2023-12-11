@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             element.style.animation = animationValue;
         }
 
+        //Design changes on dragging slider
         if (knobPosition >= railEnd / 4) {
             
             document.getElementById("video").style.display = 'none';
