@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         onThrowUpdate: update
     });
 
+    //Position of slider
     function update() {
         var P = rail.getPointAtLength(this.x);
         TweenLite.set(knob, { attr: { x: P.x - 50, y: P.y - 50 } });
